@@ -1,4 +1,4 @@
-package com.callor.system.var;
+package com.callor.system.var; 
 
 public class VarAA {
 
