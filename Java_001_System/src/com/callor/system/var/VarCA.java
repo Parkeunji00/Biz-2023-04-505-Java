@@ -18,7 +18,7 @@ public static void main(String[] args) {
 	 * 그 결과는 정수형으로 미리 선언된 intYes1 에만
 	 * 저장할 수 있다
 	 * 
-	 * ~~~ ==0 의 연산최종겨과는 boolrean type 의ㅏ
+	 * ~~~ ==0 의 연산최종결과는 boolrean type 의ㅏ
 	 * true, false 이므로
 	 * 그 결과는 미리 선언된 bYes 에만
 	 * 저장할수 있다
