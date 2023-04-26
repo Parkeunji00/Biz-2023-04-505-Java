@@ -18,5 +18,15 @@ public class ScoreServiceA {
 		int score = (int) (Math.random() * 50) + 51;
 		return score;
 	}
+	
+	public void scoreTotalPrint(int kor, int math, int eng) {
+		System.out.printf("\t");
+		System.out.printf("\t");
+		System.out.printf("%3d\t", kor);
+		System.out.printf("%3d\t", math);
+		System.out.printf("%3d\t", eng);
+		System.out.printf("%3d\t", kor + eng + math);
+		
+	}
 
 }
