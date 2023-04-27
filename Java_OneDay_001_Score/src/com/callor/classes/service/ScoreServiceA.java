@@ -5,13 +5,13 @@ import com.callor.classes.modul.ScoreDto;
 public class ScoreServiceA {
 	public void scorePrint(ScoreDto score) {
 		System.out.printf("%s\t",score.scNum);
-		System.out.printf("%s\t",score.scKor);
-		System.out.printf("%s\t",score.scEng);
-		System.out.printf("%s\t",score.scMath);
-		System.out.printf("%s\t",score.scMusic);
-		System.out.printf("%s\t",score.scArt);
-		System.out.printf("%s\t",score.getTotal());
-		System.out.printf("%s\n",score.getAvg());
+		System.out.printf("%d\t",score.scKor);
+		System.out.printf("%d\t",score.scEng);
+		System.out.printf("%d\t",score.scMath);
+		System.out.printf("%d\t",score.scMusic);
+		System.out.printf("%d\t",score.scArt);
+		System.out.printf("%d\t",score.getTotal());
+		System.out.printf("%4.2f\n",score.getAvg());
 		
 	}
 	public int getScore() {

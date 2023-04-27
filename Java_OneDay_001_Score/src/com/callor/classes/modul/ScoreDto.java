@@ -16,6 +16,7 @@ public class ScoreDto {
 		total += this.scArt;
 		return total;
 	}
+	
 
 	public float getAvg() {
 		float avg = (float) this.getTotal() / 5;
