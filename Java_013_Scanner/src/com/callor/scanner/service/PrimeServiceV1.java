@@ -1,0 +1,43 @@
+package com.callor.scanner.service;
+
+import java.util.Scanner;
+
+public class PrimeServiceV1 {
+	Scanner scan = new Scanner(System.in);
+
+	public int getNum() {
+		int intNum;
+		String inputNum = "";
+
+		while (true) {
+			System.out.print("3이상의 양의 정수를 입력하세요(QUIT:종료) : ");
+			inputNum = scan.nextLine();
+			if (inputNum.equals("QUIT")) {
+				return -1;
+			}
+			try {
+				intNum = Integer.valueOf(inputNum);
+				if (intNum < 3) {
+					continue;
+				}
+				break;
+			} catch (Exception e) {
+				// TODO: handle exception
+				System.out.println("정수형이 아닙니다. 다시 입력하세요.");
+			}
+		}
+		return intNum;
+	}
+
+	public int primeYesNo(int num) {
+		int i;
+
+		for (i = 2; i < num; i++) {
+			if (num % i == 0) {
+				return -1;
+			}
+		}
+		return num;
+	}
+
+}
