@@ -21,7 +21,7 @@ public class ExecD {
 		List<StudentDto>stList = new ArrayList<>();
 		stList.add(stDto);
 		 // 새로운 학생 정보를 임의 생성자를 통해서
-		// 데이터가 담신 객체 생성하기
+		// 데이터가 담rls 객체 생성하기
 		stDto = new StudentDto("0002" , "이몽룡", 2 , "전자공학", "010-1111-1111");
 				stList.add(stDto);
 				
