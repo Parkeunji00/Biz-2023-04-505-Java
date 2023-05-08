@@ -3,7 +3,6 @@ package com.callor.classes.exec;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-
 public class NumbersE {
 	public static void main(String[] args) {
 		// numList 데이터를 무작위 순서로 섞기
