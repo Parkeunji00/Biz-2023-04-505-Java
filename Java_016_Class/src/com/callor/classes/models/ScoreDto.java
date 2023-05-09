@@ -6,21 +6,27 @@ public class ScoreDto {
 	private int scKor;
 	private int scEng;
 	private int scMath;
-	
+	private int scMusic;
+	private int scArt;
+	private int scSoftWare;
+	private int scDataBase;
 	
 	public ScoreDto() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	
-	public ScoreDto(String stName, int scKor, int scEng, int scMath) {
+	public ScoreDto(String stName, int scKor, int scEng, int scMath, int scMusic, int scArt, int scSoftWare,
+			int scDataBase) {
 		super();
 		this.stName = stName;
 		this.scKor = scKor;
 		this.scEng = scEng;
 		this.scMath = scMath;
+		this.scMusic = scMusic;
+		this.scArt = scArt;
+		this.scSoftWare = scSoftWare;
+		this.scDataBase = scDataBase;
 	}
-	
 	public String getStName() {
 		return stName;
 	}
@@ -45,11 +51,39 @@ public class ScoreDto {
 	public void setScMath(int scMath) {
 		this.scMath = scMath;
 	}
-	
+	public int getScMusic() {
+		return scMusic;
+	}
+	public void setScMusic(int scMusic) {
+		this.scMusic = scMusic;
+	}
+	public int getScArt() {
+		return scArt;
+	}
+	public void setScArt(int scArt) {
+		this.scArt = scArt;
+	}
+	public int getScSoftWare() {
+		return scSoftWare;
+	}
+	public void setScSoftWare(int scSoftWare) {
+		this.scSoftWare = scSoftWare;
+	}
+	public int getScDataBase() {
+		return scDataBase;
+	}
+	public void setScDataBase(int scDataBase) {
+		this.scDataBase = scDataBase;
+	}
 	@Override
 	public String toString() {
-		return "ScoreDto [stName=" + stName + ", scKor=" + scKor + ", scEng=" + scEng + ", scMath=" + scMath + "]";
+		return "ScoreDto [stName=" + stName + ", scKor=" + scKor + ", scEng=" + scEng + ", scMath=" + scMath
+				+ ", scMusic=" + scMusic + ", scArt=" + scArt + ", scSoftWare=" + scSoftWare + ", scDataBase="
+				+ scDataBase + "]";
 	}
 	
 	
 }
+	
+	
+	

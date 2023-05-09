@@ -7,6 +7,8 @@ public class StudentD {
 		StudentServiceImplV1 sip = new StudentServiceImplV1();
 		sip.loadStudent();
 		sip.printStudent();
+		
+		
 	}
 
 }
