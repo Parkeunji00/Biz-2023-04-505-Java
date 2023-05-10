@@ -13,11 +13,12 @@ public class StudentDto {
 	public String stDept;
 	public int stGrade;
 	public String stTel;
-	public String stAdress;
+	public String stAddress;
+	
 	@Override
 	public String toString() {
 		return "StudentDto [stNum=" + stNum + ", stName=" + stName + ", stDept=" + stDept + ", stGrade=" + stGrade
-				+ ", stTel=" + stTel + ", stAdress=" + stAdress + "]";
+				+ ", stTel=" + stTel + ", stAdress=" + stAddress + "]";
 	}
 	
 	

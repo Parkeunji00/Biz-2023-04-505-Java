@@ -17,7 +17,7 @@ import com.callor.classes.service.ScoreService;
  */
 
 public class ScoreServiceImplV1 implements ScoreService {
-	private List<ScoreDto> scList;
+	protected List<ScoreDto> scList;
 
 	// 변수의 초기화, 객체의 초기화, 변수의 생성, 변수의 초기화
 	// 변수, 객체를 사용가능한 상태로 만드는 것
@@ -56,9 +56,9 @@ public class ScoreServiceImplV1 implements ScoreService {
 		StudentService stService = new StudentServiceImplV1();
 		stService.loadStudent();
 
-		System.out.println(Line.dLINE(100));
+		System.out.println(Line.dLine(100));
 		System.out.println("학번\t이름\t학과\t\t국어\t영어\t수학\t음악\t미술");
-		System.out.println(Line.dLINE(100));
+		System.out.println(Line.dLine(100));
 		for (ScoreDto dto : scList) {
 			StudentDto stDto = stService.getStudent(dto.getStNum());
 			System.out.print(dto.getStNum() + "\t");
@@ -78,7 +78,7 @@ public class ScoreServiceImplV1 implements ScoreService {
 			System.out.print(dto.getScArt() + "\n");
 			
 		}
-		System.out.println(Line.dLINE(100));
+		System.out.println(Line.dLine(100));
 		
 		// TODO Auto-generated method stub
 		

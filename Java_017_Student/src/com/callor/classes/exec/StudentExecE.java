@@ -1,0 +1,13 @@
+package com.callor.classes.exec;
+
+import com.callor.classes.service.impl.StudentService;
+import com.callor.classes.service.impl.StudentServiceImplV2;
+
+public class StudentExecE {
+	public static void main(String[] args) {
+		StudentService stService = new StudentServiceImplV2();
+		stService.loadStudent();
+		stService.printStudent();
+	}
+
+}

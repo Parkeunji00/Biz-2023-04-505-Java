@@ -10,7 +10,7 @@ import com.callor.classes.models.StudentDto;
 
 public class StudentServiceImplV1 implements StudentService{
 
-	private List<StudentDto> stdList; // = new ArrayList<>();
+	protected List<StudentDto> stdList; // = new ArrayList<>();
 	
 	// stdList 객체는 Service 생성자 에서 초기화 한다
 	public StudentServiceImplV1() {
@@ -36,7 +36,7 @@ public class StudentServiceImplV1 implements StudentService{
 		    std.stDept = student[DataIndex.STUDENT.ST_DEPT];
 		    std.stGrade = Integer.valueOf(student[DataIndex.STUDENT.ST_GRADE]); // 문자열을 정수형으로 바꿈
 		    std.stTel = student[DataIndex.STUDENT.ST_TEL];
-		    std.stAdress = student[DataIndex.STUDENT.ST_ADDRESS];
+		    std.stAddress = student[DataIndex.STUDENT.ST_ADDRESS];
 		    
 		    // 리스트에 추가하기
 		    stdList.add(std);
@@ -48,20 +48,20 @@ public class StudentServiceImplV1 implements StudentService{
 	@Override
 	public void printStudent() {
 		
-		System.out.println(Line.dLINE(100));
+		System.out.println(Line.dLine(100));
 		System.out.printf("학년\t이름\t학과\t   학년\t    전화번호\t   주소\n");
-		System.out.println(Line.sLINE(100));
+		System.out.println(Line.sLine(100));
 		for (StudentDto dto : stdList) {
 	    System.out.printf("%s\t",dto.stNum);
 	    System.out.printf("%s\t",dto.stName);
 	    System.out.printf("%s\t",dto.stDept);
 	    System.out.printf("%s\t",dto.stGrade);
 	    System.out.printf("%s\t",dto.stTel);
-	    System.out.printf("%s\t\n",dto.stAdress);
+	    System.out.printf("%s\t\n",dto.stAddress);
 	   
 		// TODO Auto-generated method stub
 		}
-		System.out.println(Line.dLINE(100));
+		System.out.println(Line.dLine(100));
 	}
 	/*
 	 * stdList 에서 stNum 학번의 학생데이터를 찾아서
