@@ -35,11 +35,7 @@ public class ScoreServiceImplV3 implements ScoreService {
 					Integer.valueOf(score[ScData.SC_SOFTWARE]),
 					Integer.valueOf(score[ScData.SC_DATABASE])
 							
-					
-					
-					
 					);
-			
 		}
 		
 	}
@@ -52,6 +48,8 @@ public class ScoreServiceImplV3 implements ScoreService {
 
 	@Override
 	public void printScore() {
+		
+		
 		
 	
 		// TODO Auto-generated method stub
