@@ -27,8 +27,20 @@ public class ScoreServiceImplV1 implements ScoreService {
 		// TODO Auto-generated constructor stub
 	}
 
+	protected ScoreDto str2Dto(String str) {
+		String[] score = str.split(",");
+		ScoreDto scDto = new ScoreDto(score[DataIndex.SCORE.ST_NUM], Integer.valueOf(score[DataIndex.SCORE.SC_KOR]),
+				Integer.valueOf(score[DataIndex.SCORE.SC_ENG]), Integer.valueOf(score[DataIndex.SCORE.SC_MATH]),
+				Integer.valueOf(score[DataIndex.SCORE.SC_MUSIC]), Integer.valueOf(score[DataIndex.SCORE.SC_ART]),
+				Integer.valueOf(score[DataIndex.SCORE.SC_SOFTWARE]), Integer.valueOf(score[DataIndex.SCORE.SC_DATABASE])
+
+		);
+		return scDto;
+	}
+
 	// scDat.SCORE 배열을 loading 하여
 	// scList 데이터로 변환하기
+
 	@Override
 	public void loadScore() {
 
@@ -62,7 +74,6 @@ public class ScoreServiceImplV1 implements ScoreService {
 		for (ScoreDto dto : scList) {
 			StudentDto stDto = stService.getStudent(dto.getStNum());
 			System.out.print(dto.getStNum() + "\t");
-			
 
 			if (stDto != null) {
 				System.out.print(stDto.stName + "\t");
@@ -76,12 +87,12 @@ public class ScoreServiceImplV1 implements ScoreService {
 			System.out.print(dto.getScMath() + "\t");
 			System.out.print(dto.getScMusic() + "\t");
 			System.out.print(dto.getScArt() + "\n");
-			
+
 		}
 		System.out.println(Line.dLine(100));
-		
+
 		// TODO Auto-generated method stub
-		
+
 	}
 
 }
